@@ -5,6 +5,7 @@ LABEL \
     description="Image containing perl helper scripts"
 
 RUN apt-get update -y && apt-get install -y \
+libfile-copy-recursive-perl \
 locales
 
 COPY intervals_to_bed.pl /usr/bin/intervals_to_bed.pl
