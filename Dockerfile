@@ -6,6 +6,7 @@ LABEL \
 
 RUN apt-get update -y && apt-get install -y \
 libfile-copy-recursive-perl \
+libipc-run-perl \
 locales
 
 COPY intervals_to_bed.pl /usr/bin/intervals_to_bed.pl
